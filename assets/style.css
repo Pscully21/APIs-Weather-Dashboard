@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: green;
+
+}
+
+p, a{
+  font-family: sans-serif;
+}
+
+h3, h4, h5{
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+.searchCol{
+    height: 100vh;
+    background-color: beige;
+    padding-top: 20px;
+    padding-right: 10px;
+    margin-right: -1rem;
+}
