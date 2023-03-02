@@ -20,31 +20,37 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container-fluid">
-        <div class="row">
-            <!-- City Search Bar -->
-            <div class="col-3 searchCol">
-                <!-- Search Form with Button -->
-                <h4>Search a city name:</h4>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="search-input" placeholder="City Name">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="button">Search
-                        </button>
-                    </div>
-                </div>
-                <!-- search history -->
-                <div class="list-group"></div>
+    <main class="row">
+        <!-- City Search Bar -->
+        <div class="col-3 searchCol">
+            <!-- Search Form with Button -->
+            <h4 id="city-title">Search a city name:</h4>
+            <form class="form-group">
+                <label for="city"></label><br>
+                <input type="text" id="search-input" class="form-control">
+                <button type="submit" class="btn btn-primary">Find</button>
+            </form>
+            <!-- search history -->
+            <div class="search-history"></div>
+        </div>
+        <!-- Weather Information Column -->
+        <div class="col-9">
+            <div id="today-tab">
+                <h3 id="city"><span id="today"></span></h3>
+                <div id="current-weather"></div>
             </div>
-            <!-- Weather Information Column -->
-            <div class="">
-                <div class="" style="width: 100%;" id=""></div>
+            <div id="5-day-forecast">
+                <h4 id="future-dates"></h4>
+                <div>
+                    <div class="row" id="forecast"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="assets/script.js"></script>
 </body>
 
